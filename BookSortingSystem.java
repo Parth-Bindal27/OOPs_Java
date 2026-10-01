@@ -10,40 +10,6 @@
 // 103 Computer Networks 250
 // 102 Operating Systems 400
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-
-class Book {
-    private int id;
-    private String title;
-    private int pages;
-
-    public Book(int id, String title, int pages) {
-        this.id = id;
-        this.title = title;
-        this.pages = pages;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public int getPages() {
-        return pages;
-    }
-
-    @Override
-    public String toString() {
-        return "Book{id=" + id + ", title='" + title + "', pages=" + pages + "}";
-    }
-}    
-
-
 public class BookSortingSystem {
     public static void main(String[] args) {
         Book b1 = new Book(101, "Java Basics", 150);
@@ -63,5 +29,4 @@ public class BookSortingSystem {
             System.out.println(book);
         }
     }
-
 }
